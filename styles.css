@@ -1,0 +1,409 @@
+
+:root{
+  --rose:#f9c2f2;
+}
+*{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+body{
+  background: #f2f6ff;
+  color: black;
+  padding-left: 35rem;
+   margin-top: 1rem;
+  overflow-x: hidden;
+}
+section{
+  min-height: 100vh;
+  padding: 1rem;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000;
+  width: 32rem;
+  background: #c581c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+header img{
+  height: 120px;
+  width: 100px;
+  margin-top: 2rem;
+}
+header .navbar{
+  width: 100%;
+}
+header .navbar ul{
+  list-style: none;
+  padding: 1rem 3rem;
+}
+header .navbar ul li a{
+  background: #650a65;
+  margin: .7rem 0;
+  padding: 1rem;
+  display: block;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+  color: #7e2388;
+  background: #eec2f9;
+}
+header .user #photo{
+  border-radius: 10%;
+}
+header .user #name{
+  font-size: 3rem;
+  color: #a128f2;
+}
+header .user #role{
+  font-size: 1.5rem;
+  color: #a128f2;
+}
+/Presentation/
+.presentation{
+  display: flex;  
+  align-items: center;
+  padding: 0 8rem;
+  flex-flow: column;
+  justify-content: center;
+}   
+.presentation h3{
+  font-size: 2.2rem;
+  color: #7d16c1;
+}
+.presentation h1 {
+  font-size: 4rem;
+  color: #8e42c1;
+} 
+.presentation h1 span{
+  color: #a318ad;
+}
+.presentation .bloc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.presentation .bloc .cadre{
+  width: 47rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #a82cbb;
+  position: relative; 
+  background: #eec2f9;
+  height: 25rem;
+} 
+.presentation .bloc .cadre p{
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  text-align: justify;
+  padding-right: 1rem;
+}
+/Entete de section/
+.heading{
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #a82cbb;
+  color: #eec2f9;
+}
+.heading span{
+  color: #a128f2;
+}
+
+/A propos/
+.apropos h1 span{
+  color: #a128f2;
+}
+.apropos .bloc{
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.apropos .bloc .infos{
+  padding: 1rem 1rem;
+  padding-left: 3rem;
+  flex: 1 1 48rem;
+} 
+.apropos .bloc .infos h3{
+  font-size: 1.4rem; 
+  padding: 1rem 0;
+  font-weight: normal;
+}
+.apropos .bloc .infos h3 span{
+  color: #a128f2;
+  padding: 0 .5rem;
+}
+.apropos .bloc .conmpteur{
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.apropos .bloc .conmpteur .nbre{
+  width: 20rem;
+  text-align: center;
+  padding: 2rem;
+  margin: .5rem;
+  background: #a128f2;
+  border-radius: 6%;
+}
+.apropos .bloc .conmpteur .nbre span{
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.apropos .bloc .conmpteur .nbre h3{
+  font-size: 2rem;
+}
+/formations/
+.formations .bloc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.formations .bloc .cadre{
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #a128f2;
+  position: relative; 
+  background: #dcebff;
+  height: 32rem;
+}
+.formations .bloc .cadre span{
+  font-size: 2rem;
+  color: #a128f2;
+  border-radius: 5rem; 
+  padding-bottom: 1.3rem;
+  font-weight: bold;
+}
+.formations .bloc .cadre p{
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/competences/
+.competences .bloc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.competences .bloc .cadre{
+  width: 27rem;
+  margin: 1rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #a128f2;
+  position: relative; 
+  background: #eec2f9;
+  height: 18rem;
+}
+.competences .bloc .cadre span{
+  font-size: 2rem;
+  color: #a128f2;
+  border-radius: 5rem; 
+  padding-bottom: 1.3rem;
+  font-weight: bold;
+}
+.competences .bloc .cadre p{
+  font-size: 1.4rem;
+  padding-top: 1rem;
+}
+/Projet/
+.projets .bloc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.projets .bloc .cadre{
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #a128f2;
+  position: relative; 
+  background: #eec2f9;
+  height: 30rem;
+}
+.projets .bloc .cadre span{
+  font-size: 2rem;
+  color: #a128f2;
+  border-radius: 5rem; 
+  padding-bottom: 1.3rem;
+  font-weight: bold;
+}
+.projets .bloc .cadre p{
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/Objectifs/
+  
+.objectifs h3{
+  font-size: 2.2rem;
+  color: #a128f2;
+} 
+.objectifs .bloc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.objectifs .bloc .cadre{
+  width: 60rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #a128f2;
+  position: relative; 
+  background: #eec2f9;
+  height: 35rem;
+} 
+.objectifs .bloc .cadre p{
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  text-align: justify;
+  padding-right: 1rem;
+} 
+
+/Contact/
+.contact .bloc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact .bloc .cadre{
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+.contact .bloc form{ 
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+.contact .bloc form .zone{
+  padding: 1rem;
+  margin: 1rem;
+  background: #a128f2;
+  text-transform: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 99%;
+  border-radius: 6px;
+}
+.contact .bloc form .message{
+  padding: 1rem;
+  margin: 1rem;
+  background: #a128f2;
+  text-transform: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 99%;
+  border-radius: 6px;
+}
+.contact .bloc .cadre .group h3{
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.contact .bloc .cadre .titre{
+  text-transform: uppercase;
+  color: #650a65;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+#titre2{ 
+  text-transform: uppercase;
+  color: #a128f2;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+} 
+.btn{
+  padding: .7rem 3rem;
+  background: #650a65;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+.btn:hover{
+  color: #650a65;
+  background: #b667b3;
+}
+.projets .bloc .cadre i{
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background: #a128f2;
+}
+.competences .bloc .cadre i{
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background: #a128f2;
+}
+.formations .bloc .cadre i{
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background: #650a65;
+}
